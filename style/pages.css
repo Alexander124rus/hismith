@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'helv5normal';
+    src: url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.eot');
+    src: url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.eot') format('embedded-opentype'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.woff') format('woff'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.ttf') format('truetype'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.otf') format('otf'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv5normal.svg#ariblk') format('svg');
+}
+
+@font-face {
+    font-family: 'helv7bold';
+    src: url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.eot');
+    src: url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.eot') format('embedded-opentype'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.woff') format('woff'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.ttf') format('truetype'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.otf') format('otf'),
+         url('http://hronycom.perensona23.ru:8081/fonts/helv7bold.svg#ariblk') format('svg');
+}
+
+/*---------------------------------------
+        Прилоадер              
+-----------------------------------------*/
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fefefe;
+	z-index: 99999;
+	height: 100%;
+	width: 100%;
+	overflow: hidden !important;
+}
+
+.status {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-image: url(http://hronycom.perensona23.ru:8081/img/preloader.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: -20px 0 0 -20px;
+}
+
+/*---------------------------------------
+        Кнопка Вверх              
+-----------------------------------------*/
+.scrollup {
+    z-index: 9999;
+    bottom: 28px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    outline: none;
+    position: fixed;
+    right: 28px;
+    padding: 10px 14px;
+    background: #ed1c24;
+    border-radius: 80px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+}
+
+.scrollup:hover{
+    color: #fff;
+    outline: medium none;
+    text-decoration: none;
+    
+}
+.scrollup:focus{
+    color: #fff;
+    outline: medium none;
+    text-decoration: none;
+}
+
+a:hover, a:focus {text-decoration: none; outline: none;}
+
+.menu-top {position:fixed; top:0px; width: 100%; z-index: 9999;}
+.to_top{position:fixed; top:0px; width: 100%; z-index: 9999;}
+
+.breadcrumbs_list{
+	margin: 60px 0 20px 0;
+	padding: 0 0 0 22px;
+	text-align: left;
+	list-style-type: none;
+}
+.breadcrumbs_elements{
+	display: inline-block;
+	color: #000;
+    font-size: 16px;
+    left: 0;
+}
+
+/*-----Основная часть-----*/
+#content {min-height: 700px;}
+#content h2 {font-family: 'helv7bold'; color: #000; font-size: 38px; margin-top: 50px; }
+#content h3 {
+	color: #000;
+	font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	background:  rgba(0, 0, 0, 0) url("../img/h2-bg.png") no-repeat scroll center bottom; 
+	font-family: 'helv5normal';
+	line-height: 24px;
+}
+#content h4 {font-family: 'helv7bold'; color: #000; font-size: 20px; text-align: left; }
+
+ol {margin: 0 auto;}
+ol li {font-family: 'helv5normal'; font-size: 25px; text-align: left; color: #000; margin-bottom: 10px;}
+ol li a {color: #000; text-decoration: none; outline: none;}
+ol a:hover {
+		color: #ed1c24;
+		background-color: #fff;
+		outline: none;
+	}
+	ol a:focus {
+		color: #ed1c24;
+		text-decoration: none;
+		outline: none;
+	}
+
+.book { margin: 0 auto;}
+.book li {cursor: pointer; font-family: 'helv5normal'; font-size: 20px; text-align: left; color: #000; padding: 10px 0; }
+.book li:hover {
+		color: #ed1c24;
+		background-color: #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	.book ol a:focus {
+		color: #ed1c24;
+		text-decoration: none;
+		outline: none;
+	}
+	.book img{width: 100%;}
+	
+.sitebar {margin-top: 50px; border-left: 3px solid #ed1c24}
+.sitebar h3 {margin: 5px 50px 10px 0; font-size: 'helv5normal'; font-size: 20px; color: #000;}
+.sitebar ol {width: 100%; list-style-type: none; margin: 0; padding: 0; text-align: left;}
+.nav_item {margin-bottom: 20px; color: #000; font-size: 16px; text-decoration: none; outline: none;}
+.sitebar ol a:hover {color: #ed1c24; font-size: 16px;}
+.sitebar ol a:focus {color: #ed1c24; font-size: 16px;}
+
+.all-batton {background:#ed1c24; color:#fff; border-radius:6px; font-size:12px; padding:6px 10px;}
+.all-batton:hover {background:#ed1c24; color:#fff; border-radius:6px; font-size:12px; padding:6px 10px;}
+.all-batton:focus {background:#ed1c24; color:#fff; border-radius:6px; font-size:12px; padding:6px 10px;}
+
+#form {margin-top: 15px;}
+
+/*-----Страница ошибки-----*/
+.error {background: url("../img/bg-header.jpg"); text-align: center; padding: 10px 0;}
+.error h1 {color: #fff; font-family: 'helv7bold'; font-size: 82px;}
+.error h2 {color: #fff; font-family: 'helv5normal'; font-size: 62px;}
+.error h3 {color: #fff; font-family: 'helv7bold'; font-size: 400px;}
+
+.selected a{
+	color: #ed1c24;
+}
+
+/*-----Поисковый фильтр-----*/
+#filter {
+	width: 100%;
+	padding: 10px 0;
+	background: #f5f5f5 none repeat scroll 0 0; 
+	border: 1px solid #e8e8e8; 
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#easy,#expanded {
+	padding: 25px 0;
+}
+
+.nav-tabs {
+	padding: 10px;
+	border: none;
+}
+
+.nav-tabs li {
+	width: 100%;
+	margin: 0;
+	border: 1px solid #ddd;
+}
+
+.nav-tabs > li > a {
+	margin: 0;
+	padding: 10px;
+	color: #000;
+	border: none; 
+	outline: none;
+}
+.nav-tabs > li > a:hover {border: none; outline: none;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	margin: 0;
+	padding: 10px;
+	outline: none;
+	background: #eee;
+	color: #000;
+	border-left: 2px solid #ed1c24;
+	border-right: 0;
+	border-radius: 0;
+}
+
+.block-form {display: inline-block; float: left; margin-right: 5px;}
+
+#author, #newspaper {width: 250px; height: 30px; font-size: 16px;}
+input, select {padding: 0 10px; color: #a6a6a6;}
+select option {color: #000;}
+#date_start, #date_end {width: 100px; height: 30px; font-size: 16px;}
+
+.data {display: inline-block;}
+#search_box {width: 700px; height: 30px; font-size: 16px;}
+
+.batton_search {
+   padding: 2px 10px;
+   color: #000;
+}
+
+#debug {
+    position:absolute;
+    left: 20%;
+    background:#111;
+    height:auto;
+    border:1px solid #444;
+    color:#ccc;
+    font-size:12px;
+    font-family:"Andale Mono";
+    padding:4px 8px;
+}
+
+#debug img {
+	width: 100%;
+}
